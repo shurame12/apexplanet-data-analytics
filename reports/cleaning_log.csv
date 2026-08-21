@@ -1,0 +1,4 @@
+step,column,transformation,reason
+1,Unnamed: 22,Removed,Unnecessary import column
+2,All columns,Removed duplicate rows,Prevent duplicate records
+3,date,Converted to datetime,Enable time-based analysis
