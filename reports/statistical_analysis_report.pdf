@@ -1,0 +1,146 @@
+# Key Statistical Findings
+
+## 1. Order Amount Distribution
+
+Order amounts show positive skewness, indicating
+that the distribution is right skewed.
+
+## 2. Confidence Interval
+
+The 95% confidence interval for average order amount was
+646.9781388452716 to 650.1447906810527.
+
+## 3. Hypothesis Testing
+
+The one-sample t-test produced a p-value of 0.0.
+Therefore, the null hypothesis was [rejected/not rejected]
+at the 5% significance level.
+
+## 4. Category Differences
+
+ANOVA was used to test whether average order amounts differ
+across product categories.
+
+## 5. Order Status and Fulfilment
+
+A chi-square test was used to examine the association between
+order status and fulfilment type.
+
+## 6. Correlation
+
+The correlation analysis identified the strength and direction
+of relationships between numerical variables.
+
+Correlation was interpreted as association and not as evidence
+of causation.
+
+## 7. Forecasting
+
+A baseline time-series model was used to estimate future monthly
+revenue. The forecast should be treated as an initial planning
+estimate rather than a definitive prediction.
+
+## 8. Business Implications
+
+The findings can help identify high-performing categories,
+understand sales variability, support inventory planning,
+and provide a statistical basis for future business decisions.
+
+# Time Series Findings
+
+## 1. Sales Trend
+
+Monthly revenue was analyzed to identify long-term trends and
+short-term fluctuations.
+
+## 2. Seasonality
+
+Time-series decomposition was used to separate the observed
+revenue into trend, seasonal, and residual components.
+
+## 3. Stationarity
+
+The Augmented Dickey-Fuller test was used to determine whether
+the monthly revenue series was stationary.
+
+## 4. Smoothing
+
+A three-month moving average was applied to reduce short-term
+fluctuations and highlight the underlying trend.
+
+Exponential smoothing was also used as a baseline forecasting
+approach.
+
+## 5. Forecasting
+
+ARIMA and SARIMA models were evaluated using a holdout test set.
+
+## 6. Forecast Accuracy
+
+The models were evaluated using:
+
+- MAE
+- RMSE
+- MAPE
+
+The model with the lower forecasting errors was considered the
+better-performing model for this dataset.
+
+## 7. Business Implications
+
+The forecast can support:
+
+- inventory planning
+- sales target setting
+- resource allocation
+- revenue planning
+- identifying periods of increased or decreased demand
+
+The forecasts should be treated as estimates rather than
+guaranteed future sales.
+
+# Model Limitations
+
+## 1. Limited Features
+
+The available dataset contains a limited number of variables.
+Important factors such as customer demographics, product price
+history, promotions, discounts, and customer behavior may not be
+available.
+
+## 2. No Customer Identifier
+
+The dataset does not contain a reliable unique customer ID.
+Therefore, customer churn, retention, and customer-level
+prediction cannot be performed reliably.
+
+## 3. Classification Target
+
+Order status was converted into a binary classification target
+for demonstration purposes. This target does not represent
+customer churn.
+
+## 4. Regression Target
+
+Order amount was used as the regression target. Care was taken
+not to include amount itself as a predictor to avoid data leakage.
+
+## 5. Model Generalization
+
+The models are trained on historical observations and may not
+generalize to future orders if purchasing patterns change.
+
+## 6. Decision Tree Overfitting
+
+Decision trees can overfit the training data. A maximum tree depth
+was therefore used to limit model complexity.
+
+## 7. Dataset Size
+
+The dataset and available time period may not be sufficient for
+building highly reliable predictive models.
+
+## 8. Correlation and Causation
+
+Predictive relationships identified by the models do not
+necessarily imply causal relationships.
