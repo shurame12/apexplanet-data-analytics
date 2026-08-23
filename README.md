@@ -1,49 +1,86 @@
-Project: Amazon Sales Data Analysis
-Task: Task 1 — Foundational Setup & Exploratory Data Analysis
-Timeline: 8 Days
-Dataset: Amazon Sale Report
-Tools: Python, Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook
-Data cleaning: Missing values, duplicates, data types, column names, outliers
-EDA: Statistical analysis, histograms, boxplots, bar charts, scatter plots, correlation heatmap, monthly trends
-Key findings
-Project structure
+# Amazon Sales Data Analytics
 
-Task 2 — SQL & Data Extraction
+This project analyzes an Amazon sales dataset using Python, SQL,
+and Power BI to extract business insights and create interactive
+visualizations.
 
-Objective
+## Tasks Completed
 
-Develop SQL skills for data extraction, transformation, aggregation,
-and business analysis and integrate SQL with Python.
+### Task 1 — Data Cleaning & EDA
 
-Technologies
+- Data cleaning and preprocessing
+- Missing-value handling
+- Duplicate removal
+- Data-type correction
+- Outlier analysis
+- Exploratory data analysis
+- Statistical summaries
+- Univariate and bivariate analysis
 
-- SQL
-- SQLite
-- SQLAlchemy
-- Python
-- Pandas
-- Jupyter Notebook
+### Task 2 — SQL & Data Extraction
 
-Completed Activities
+- SQLite database
+- 20+ SQL queries
+- Aggregation and filtering
+- Subqueries and CTEs
+- Window functions
+- Moving averages
+- Cumulative revenue
+- Query optimization
+- Python-SQL integration using SQLAlchemy
 
-- Created a local SQLite database
-- Imported cleaned Amazon sales data
-- Wrote 20+ SQL queries
-- Performed filtering and aggregation
-- Used subqueries and CTEs
-- Implemented SQL window functions
-- Calculated moving averages
-- Calculated cumulative revenue
-- Created reusable SQL views
-- Used EXPLAIN QUERY PLAN
-- Created database indexes
-- Connected Python to SQLite using SQLAlchemy
-- Used pandas.read_sql()
-- Implemented parameterized queries
-- Created reusable db_utils.py module
+### Task 3 — Data Visualization & Dashboarding
 
-Customer Analysis Limitation
+- Matplotlib visualizations
+- Seaborn statistical visualizations
+- Plotly interactive visualizations
+- Power BI executive dashboard
+- KPI cards
+- Monthly sales trends
+- Category analysis
+- Geographic analysis
+- Top product analysis
+- Interactive filters
+- Drill-through pages
+- Tooltips
+- Bookmarks and navigation
+- Dashboard branding
 
-The dataset does not contain a unique customer identifier.
-Therefore, customer-level revenue and retention metrics could not
-be reliably calculated.
+## Key Dashboard Metrics
+
+- Total Revenue
+- Total Orders
+- Total Quantity
+- Average Order Value
+- Monthly Revenue
+- Revenue by Category
+- Sales by State
+- Top 10 Products
+
+
+
+## Dashboard Preview
+
+![Dashboard](reports/dashboard_preview.png)
+
+## Python Visualizations
+
+The project includes 15+ visualizations created using:
+
+- Matplotlib
+- Seaborn
+- Plotly
+
+## Interactive Plotly Dashboard
+
+[🔗 Open Interactive HTML Dashboard](dashboards/amazon_sales_interactive.html)
+
+## Project Structure
+
+```text
+data/
+notebooks/
+scripts/
+sql/
+dashboards/
+reports/
