@@ -116,3 +116,152 @@ segmentation cannot be reliably performed from this dataset alone.
 
 Classification was therefore performed using order delivery status
 rather than customer churn.
+
+# 📊 ApexPlanet Data Analytics Project
+
+## Overview
+
+This project was completed as part of the **ApexPlanet Software Pvt. Ltd. Data Analytics Internship**.
+
+The project focuses on analyzing an Amazon Sales dataset and transforming raw transactional data into meaningful business insights using Python, SQL, Power BI, statistics, and machine learning.
+
+The project covers the complete data analytics workflow:
+
+**Data Cleaning → EDA → SQL Analysis → Visualization → Statistical Analysis → Predictive Modeling → Dashboard → Automation**
+
+---
+
+## 🎯 Objective
+
+The main objective of this project is to analyze Amazon sales data to:
+
+- Understand sales and order patterns
+- Identify high-performing product categories
+- Analyze monthly revenue trends
+- Examine order-status distributions
+- Identify potential outliers and anomalies
+- Compare geographical sales performance
+- Perform statistical analysis
+- Build basic predictive models
+- Create an interactive business dashboard
+- Automate recurring analytics tasks
+
+---
+
+# 📂 Dataset Description
+
+The project uses an **Amazon Sales transactional dataset**.
+
+Important fields include:
+
+| Column | Description |
+|---|---|
+| `order_id` | Unique order identifier |
+| `date` | Order date |
+| `category` | Product category |
+| `qty` | Quantity ordered |
+| `amount` | Order amount/revenue |
+| `status` | Order fulfilment status |
+| `fulfilment` | Fulfilment method |
+| `ship_state` | Shipping state |
+
+### Dataset Limitation
+
+The dataset does not contain a reliable unique customer identifier. Therefore, customer-level churn, retention, and customer segmentation cannot be reliably calculated from the available data.
+
+The dataset also contains only a limited historical period, which restricts long-term seasonal forecasting.
+
+---
+
+# ❓ Key Questions Answered
+
+The project addresses questions such as:
+
+1. What are the overall sales and order volumes?
+2. How does revenue change over time?
+3. Which product categories generate the most revenue?
+4. What is the distribution of order quantities?
+5. Which order statuses occur most frequently?
+6. Which shipping states generate higher revenue?
+7. What relationships exist between numerical variables?
+8. Are there significant differences between product categories?
+9. Can order amount be predicted using available features?
+10. Can delivered order status be predicted from available order information?
+
+---
+
+# 🛠️ Tech Stack
+
+### Programming & Data Analysis
+
+- Python
+- Pandas
+- NumPy
+
+### Visualization
+
+- Matplotlib
+- Seaborn
+- Plotly
+
+### Database & SQL
+
+- SQLite / PostgreSQL
+- SQL
+- SQLAlchemy
+
+### Business Intelligence
+
+- Microsoft Power BI
+
+### Statistics & Machine Learning
+
+- SciPy
+- Statsmodels
+- Scikit-learn
+
+### Development
+
+- Jupyter Notebook
+- VS Code
+- Git
+- GitHub
+
+---
+
+# 📁 Project Structure
+
+```text
+apexplanet-data-analytics/
+│
+├── data/
+│   ├── raw/
+│   │   └── Amazon_Sales.csv
+│   │
+│   └── processed/
+│       └── cleaned_amazon_sales.csv
+│
+├── notebooks/
+│   ├── Task_1_EDA.ipynb
+│   ├── Task_2_SQL.ipynb
+│   ├── Task_3_Visualization.ipynb
+│   └── Task_4_Statistical_Modeling.ipynb
+│
+├── scripts/
+│   ├── db_utils.py
+│   └── analytics_pipeline.py
+│
+├── outputs/
+│   ├── kpi_summary.csv
+│   ├── category_performance.csv
+│   ├── monthly_sales.csv
+│   └── analytics_results.xlsx
+│
+├── dashboards/
+│   └── Amazon_Sales_Dashboard.pbix
+│
+├── reports/
+│   └── Executive_Report.pdf
+│
+├── requirements.txt
+└── README.md
